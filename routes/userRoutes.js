@@ -99,7 +99,11 @@ router.post('/create', async (req, res) => {
 
     } catch (error) {
         console.error('Error creating user:', error)
-        res.status(500).json({ message: 'Internal server error' })
+        res.status(500).json({ 
+            message: 'Internal server error',
+            error: error.message,
+            details: 'Check if MongoDB is connected'
+        })
     }
 })
 
