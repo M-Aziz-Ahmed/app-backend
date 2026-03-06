@@ -3,12 +3,13 @@
   "version": "1.0.0",
   "type": "module",
   "description": "Backend API for Pet Store app",
-  "main": "server.js",
+  "main": "server-mock.js",
   "engines": {
     "node": ">=18.0.0"
   },
   "scripts": {
-    "start": "node server.js",
+    "start": "node server-mock.js",
+    "start:db": "node server.js",
     "dev": "node --watch server.js",
     "mock": "node server-mock.js"
   },
